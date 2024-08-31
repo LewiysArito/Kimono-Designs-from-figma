@@ -22,14 +22,19 @@
     font-weight: 900;
     src: url("../fonts/lato-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* For all proj*/
 html {
     box-sizing: border-box;
-} /*нужно для того, чтобы размер падингов не влиял
- на общаю ширину блока с учётом оступов
- то есть если ширина блока 20px а длина равна 200px, то
- тогда ширина с учётом отступа равна 240px, а border-box данное поведение отменяет, и делает будет оставлять ширину равную 200 px
- то есть падинги расчитываются внутрь блока
- */
+}
+body {
+    font-family: "Lato";
+    font-style: "normal";
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -41,6 +46,52 @@ html {
     margin: 0 auto;
 }
 
+/* Header steles for start*/
 .header {
     background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 82px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+}
+.header__link:hover,
+.header_link:focus,
+.header_link:active {
+    opacity: 75%;
+}
+
+/* Header steles for end*/
+
+/* Main steles for start*/
+
+/* Main steles for end*/
