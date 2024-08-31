@@ -48,7 +48,6 @@ body {
 
 /* Header steles for start*/
 .header {
-    background-color: red;
     position: fixed;
     top: 0;
     left: 0;
@@ -90,8 +89,74 @@ body {
     opacity: 75%;
 }
 
-/* Header steles for end*/
+/* Header styles for end*/
 
-/* Main steles for start*/
+/* Intro styles for start*/
 
-/* Main steles for end*/
+.intro {
+    height: 100vh;
+    background: url(../img/svg/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+}
+
+.intro__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    max-width: 619px;
+    margin-bottom: 22px;
+}
+
+.intro__subtitle {
+    color: white;
+    max-width: 546px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 59px;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    width: 297px; /*фикстрованный размер*/
+    background: transparent url("../img/svg/circle-icon.svg") no-repeat left top;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px #bfc0c5 solid;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.search-form__field::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.search-form__submit {
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    background-color: #1b7dff;
+    border: 0;
+}
+
+.search-form__submit:hover,
+.search-form__submit:active,
+.search-form__submit:focus {
+    background-color: #1e5bab;
+}
+
+/* Intro styles for end*/

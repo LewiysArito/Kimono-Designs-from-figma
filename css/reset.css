@@ -253,11 +253,11 @@ form {
  * Define consistent border, margin, and padding.
  */
 
-fieldset {
+/* fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
-}
+} */
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -286,7 +286,7 @@ textarea {
     font-size: 100%; /* 1 */
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
-    vertical-align: middle; /* 3 */
+    /* vertical-align: middle; */
 }
 
 /**
@@ -326,7 +326,7 @@ html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
+    cursor: pointer;
     overflow: visible; /* 4 */
 }
 
