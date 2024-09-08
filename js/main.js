@@ -13,12 +13,20 @@
     const burger = document.querySelector(".burger");
     const menu = document.querySelector(".header__nav");
     const menuCloseItem = document.querySelector(".header__nav-close");
+    const menuLinks = document.querySelectorAll(".header__link");
     burger.addEventListener("click", () => {
         menu.classList.add("header__nav-active");
     });
     menuCloseItem.addEventListener("click", () => {
         menu.classList.remove("header__nav-active");
     });
+    if (window.innerWidth <= 820) {
+        for (let i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].addEventListener("click", () => {
+                menu.classList.remove("header__nav-active");
+            });
+        }
+    }
 })();
 
 // Функция осуществляющая scroll до якоря
